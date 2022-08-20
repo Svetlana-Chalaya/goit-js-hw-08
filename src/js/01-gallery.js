@@ -1,15 +1,15 @@
 // Add imports above this line
-import { galleryItems } from "./gallery-items";
+import { galleryItems } from './gallery-items';
 // Change code below this line
 
 console.log(galleryItems);
-import "simplelightbox/dist/simple-lightbox.min.css";
+import 'simplelightbox/dist/simple-lightbox.min.css';
 
-const SimpleLightbox = require("simplelightbox");
+// const SimpleLightbox = require("simplelightbox");
 // Change code below this line
-const galleryContainer = document.querySelector(".gallery");
+const galleryContainer = document.querySelector('.gallery');
 const cardsGallery = containerGalleryCardsItems(galleryItems);
-galleryContainer.insertAdjacentHTML("beforeend", cardsGallery);
+galleryContainer.insertAdjacentHTML('beforeend', cardsGallery);
 
 function containerGalleryCardsItems(galleryItems) {
   return galleryItems
@@ -20,10 +20,10 @@ function containerGalleryCardsItems(galleryItems) {
 </a>
 </li>`;
     })
-    .join("");
+    .join('');
 }
 console.log(galleryItems);
 
-const lightbox = new SimpleLightbox(".gallery a", {});
+const lightbox = new SimpleLightbox('.gallery a', {});
 
 lightbox.show();
