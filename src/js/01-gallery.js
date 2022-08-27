@@ -1,6 +1,6 @@
 // Add imports above this line
 import SimpleLightbox from 'simplelightbox';
-import '../css/common.css';
+// import '../css/common.css';
 import '../css/01-gallery.css';
 
 import { galleryItems } from './gallery-items';
